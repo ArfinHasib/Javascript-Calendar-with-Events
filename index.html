@@ -14,18 +14,18 @@
       <h1>Event Calendar</h1>
       <div id="calendar" class="calendar-grid"></div>
 
-      <button class="add-task-btn" onclick="showAddTaskModal()">Add Task</button>
+   </div>
+   <button class="add-task-btn" onclick="showAddTaskModal()">Add Task</button>
 
-      <div class="modal" id="addTaskModal">
-         <div class="modal-content">
-            <span class="close" onclick="closeAddTaskModal()">&times;</span>
-            <span>
-               <h2>Add Task</h2>
-               <input type="date" id="task-date">
-               <input type="text" id="task-desc" placeholder="Task Description">
-               <button onclick="addTask()">Add Task</button>
-            </span>
-         </div>
+   <div class="modal" id="add-task-modal">
+      <div class="modal-content">
+         <span class="close" onclick="closeAddTaskModal()">&times;</span>
+
+         <h2>Add Task</h2>
+         <input type="date" id="task-date">
+         <input type="text" id="task-desc" placeholder="Task Description">
+
+         <button onclick="addTask()">Add Task</button>
       </div>
    </div>
 

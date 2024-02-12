@@ -55,7 +55,7 @@ function addTask() {
    const taskDate = new Date(document.getElementById('task-date').value);
    const taskDesc = document.getElementById('task-desc').value.trim();
 
-   if (taskDesc && !isNaN(taskDesc.getDate())) {
+   if (taskDesc && !isNaN(taskDate.getDate())) {
       const calendarDays = document.getElementById('calendar').children;
 
       for (let i = 0; i < calendarDays.length; i++) {
@@ -72,7 +72,7 @@ function addTask() {
             });
 
             taskElement.addEventListener('click', function (event) {
-               editTaskt(taskElement);
+               editTask(taskElement);
             });
 
             day.appendChild(taskElement);
